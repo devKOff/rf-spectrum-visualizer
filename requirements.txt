@@ -1,1 +1,2 @@
+# pyrf24 is installed with pip; numpy / matplotlib / tkinter come from apt (see install steps)
 pyrf24==0.6.0
