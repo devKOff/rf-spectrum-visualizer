@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rf_spectrum_visualizer"
+version = "3.1.0"
+description = "Raspberry Pi + nRF24L01+ 2.4 GHz RF activity visualizer (standalone, from scratch)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib>=3.5",
+]
+
+[project.optional-dependencies]
+# pyrf24 is optional: only needed on the Raspberry Pi with the radio attached.
+# Importing pyrf24 must never happen at package import time.
+hardware = ["pyrf24>=0.6.0"]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rf_spectrum_visualizer*"]

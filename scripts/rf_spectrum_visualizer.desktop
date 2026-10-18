@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=RF Spectrum Visualizer v3.1
+Comment=Raspberry Pi + nRF24L01+ 2.4 GHz RF activity visualizer
+Exec=python3 /home/pi/workshop-hardware-/v7/scripts/run_gui.py
+Icon=preferences-system-network
+Terminal=false
+Type=Application
+Categories=Science;Engineering;
+Keywords=RF;nRF24;spectrum;visualizer;
